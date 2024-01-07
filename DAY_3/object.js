@@ -18,4 +18,5 @@ console.log(obj["name"]);
 console.log(obj[100]);
 obj.show();
 console.log(obj.access);
+console.log(obj)
 
