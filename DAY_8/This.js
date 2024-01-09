@@ -1,0 +1,1 @@
+// in global level this keyword points to the window object. and in the object it points to the object. arrow function does not have the this keyword so its points to the parent this keyword.
