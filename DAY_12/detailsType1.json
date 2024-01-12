@@ -1,0 +1,32 @@
+[
+    {
+        "firstname": "shraddha",
+        "lastname": "goyal",
+        "phonenumber": ["123345","789789"],
+        "address" :{
+            "streetAddress":"Brij vihar colony",
+            "city":"Gwalior",
+            "postCode": 474001
+        }
+    },
+    {
+        "firstname": "shraddha1",
+        "lastname": "goyal",
+        "phonenumber": ["123345","789789"],
+        "address" :{
+            "streetAddress":"Brij vihar colony",
+            "city":"Gwalior",
+            "postCode": 474001
+        }
+    },
+    {
+        "firstname": "shraddha2",
+        "lastname": "goyal",
+        "phonenumber": ["123345","789789"],
+        "address" :{
+            "streetAddress":"Brij vihar colony",
+            "city":"Gwalior",
+            "postCode": 474001
+        }
+    }
+]
