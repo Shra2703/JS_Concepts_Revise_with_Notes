@@ -1,0 +1,47 @@
+<!-- 
+    12-02-2024
+    1) settimeout and set interval
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>setTimeout</h1>
+    <button type="submit" id="submit">Click me</button>
+    <div id="show"></div>
+    <hr />
+    <h1>setInterval</h1>
+    <div id="show1"></div>
+    <button id="stop">Stop me</button>
+
+    <script>
+      // this block is for set time out
+      document.getElementById("submit").addEventListener("click", () => {
+        document.getElementById("show").innerHTML = `<h2>Hello</h2>`;
+
+        setTimeout(() => {
+          document.getElementById("show").innerHTML = "";
+        }, 5000);
+      });
+
+      // for set interval
+      let count = 0;
+      let timer = document.getElementById("show1");
+      let stop = document.getElementById("stop");
+      timer.textContent = `${count}`;
+      const timer1 = setInterval(() => {
+        count++;
+        timer.textContent = `${count}`;
+      }, 1000);
+
+      stop.addEventListener("click", () => {
+        clearInterval(timer1);
+      });
+    </script>
+  </body>
+</html>
