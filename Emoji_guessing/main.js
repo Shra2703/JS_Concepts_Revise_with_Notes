@@ -22,7 +22,6 @@ const stopBtn = document.getElementById("stop-button");
 
 function displayEmoji() {
   let descriptionEle = document.getElementById("description");
-
   descriptionEle.textContent = emojiDetails[currentEmojiIndex].emoji;
   timerEle.textContent = `Timer: ${timerDuration} sec`;
 }
@@ -99,21 +98,24 @@ function endGame() {
 restartBtn.addEventListener("click", () => {
   timerDuration = 30;
   currentEmojiIndex = 0;
+  guessInput.disabled = false;
   score = 0;
   scoreEle.textContent = `Score: ${score}`;
+  startTimer(timerDuration);
+  timerEle.textContent = `Timer: ${timerDuration} sec`;
   displayEmoji();
 });
 
 // Stop button event listerner
 stopBtn.addEventListener("click", () => {
-  if (flag) {
+  if (flag && timerDuration > 0) {
     clearInterval(timerInterval);
     stopBtn.textContent = "Start Timer";
     console.log(flag);
     flag = false;
-  } else {
+  } else if(timerDuration > 0 && flag ===false){
     startTimer(timerDuration);
-    timerEle.textContent = `Timer: ${timerDuration} sec`;
+    // timerEle.textContent = `Timer: ${timerDuration} sec`;
     stopBtn.textContent = "Stop Timer";
     console.log(flag);
     flag = true;
