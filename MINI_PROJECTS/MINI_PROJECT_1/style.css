@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(20, 20, 20);
+}
+
+#card {
+  height: 400px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid;
+}
+
+#card  img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+#card h1{
+    margin: 5px 0;
+    font-size: 23px;
+}
+
+#card h4{
+    color: red;
+    margin: 59px 0px;
+    font-size: 20px;
+
+}
+
+
+#card button{
+    background-color:black;
+    color: #fff;
+    font-weight: 700;
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+
+}
+
+#card #dislike{
+    background-color: darkgray;
+    color: rgb(60, 59, 59);
+}
