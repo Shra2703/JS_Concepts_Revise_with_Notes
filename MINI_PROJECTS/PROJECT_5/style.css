@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgb(49, 48, 48);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card {
+  height: 490px;
+  width: 320px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  position: relative;
+
+}
+
+#storiyan {
+  height: 120px;
+  width: 100%;
+  /* background-color: red;
+     */
+  border-bottom: 1px solid #dadada;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+#storiyan::-webkit-scrollbar{
+  display: none;
+}
+
+.story {
+  /* background-color: black; */
+  /* border: 3px solid red; */
+  background: linear-gradient(yellow, red, blue, rgb(136, 164, 136), pink);
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  padding: 4px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+#full-screen{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+  display: none;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
