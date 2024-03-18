@@ -14,50 +14,79 @@ body {
   overflow: hidden;
 }
 
-#main{
-    height: 100%;
-    width: 100%;
-    background-color: rgb(153, 231, 153);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-
-#panel{
-    height: 80%;
-    width: 80%;
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(153, 231, 153);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#ptop{
-    height: 80px;
-    width: 100%;
-    background-color: rgb(4, 98, 4);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 30%;
+#panel {
+  height: 80%;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-.elem{
-    display: flex;
-    align-items: center;
-    /* background-color: white; */
-    gap: 7px;
-    background-color: red;
-    margin-right: 10px;
+/* panel top */
+#ptop {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(4, 98, 4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30%;
 }
-.box{
-    height: auto;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    color: rgb(15, 63, 15);
-    font-weight: 800;
+
+.elem {
+  display: flex;
+  align-items: center;
+  /* background-color: white; */
+  gap: 7px;
+  background-color: red;
+  margin-right: 10px;
 }
-h3{
-    margin-top: -20px;
+.box {
+  height: auto;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: rgb(15, 63, 15);
+  font-weight: 800;
+}
+h3 {
+  margin-top: -20px;
+}
+
+/* panel bottom */
+#pbtm {
+  width: 100%;
+  height: calc(100% - 80px);
+  /* background-color: black; */
+  padding: 20px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.bubble{
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble:hover{
+  cursor: pointer;
+  background-color: rgb(4, 74, 4);
 }
